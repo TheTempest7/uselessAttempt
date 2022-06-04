@@ -1,0 +1,412 @@
+/*body{
+    background: url(../img/bg.png) ;
+    max-width: 1024px;
+    max-height: 768px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size:1024px 768px  ;  
+}*/
+@media (max-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+}
+body {
+  overflow: hidden;
+  max-width: 1024px;
+  max-height: 768px;
+  overflow-x: hidden;
+}
+
+.wrapper__background {
+  height: 768px;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper__global {
+  position: absolute;
+  left: 124px;
+  top: 0;
+  display: flex;
+  margin-top: 25.5px;
+}
+
+.wrapper__project {
+  border-left: 1px solid black;
+  font-size: 19px;
+  margin-left: 22.5px;
+  padding-left: 22.5px;
+}
+
+.wrapper__domsideGlobal {
+  position: absolute;
+  left: 124px;
+  bottom: 13.5px;
+}
+
+.mouvablePart {
+  position: absolute;
+  left: 127px;
+  top: 150px;
+  width: 1024px;
+  height: 768px;
+}
+
+.mouvablePart__body {
+  display: flex;
+}
+
+.mouvablePart__item {
+  width: 1024px;
+  height: 768px;
+}
+
+.firstItem__hello {
+  font-size: 22.5px;
+  font-family: "Myriad Pro";
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+  margin-bottom: 35.5px;
+}
+
+.firstItem__itIsNot {
+  font-size: 99px;
+  font-family: "Myriad Pro3";
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 7.5px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.firstItem__itIsNot span {
+  font-family: "Myriad Pro";
+  font-weight: 900;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.firstItem__downsidePart {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.firstItem__task {
+  font-size: 99px;
+  font-family: "Myriad Pro3";
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 7.5px;
+}
+
+.frstBtn {
+  margin-left: 51px;
+}
+
+.frstBtn__button-body {
+  width: 287.5px;
+  height: 80px;
+  padding: 15.5px 35px 16px 19.5px;
+  border-radius: 80px;
+  background-color: #ff6a9f;
+  display: flex;
+}
+
+.frstBtn__round {
+  width: 51px;
+  height: 51px;
+  background-color: black;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.frstBtn__round svg {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.frstBtn__whtsNext {
+  font-size: 22.5px;
+  font-family: "Myriad Pro";
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 39px;
+}
+
+.firstItem__underTaskSvg {
+  position: absolute;
+  right: 130px;
+  top: 12%;
+}
+
+.firstItem__overHello {
+  position: absolute;
+  left: -127px;
+  top: -82px;
+}
+
+.firstItem__aboveSperm {
+  position: absolute;
+  right: 269px;
+  top: -73px;
+}
+
+.firstItem__blueSpot {
+  position: absolute;
+  right: 99px;
+  top: -115px;
+}
+
+.firstItem__britgherBlueSpot {
+  position: absolute;
+  bottom: -181px;
+  left: 214px;
+}
+
+.firstItem__bigBottomSubstance {
+  position: absolute;
+  bottom: -223px;
+  right: 258px;
+}
+
+.firstItem__pinkSperm {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.firstItem__nearTask {
+  position: absolute;
+  left: -47px;
+  bottom: -22px;
+}
+
+.firstItem__sperm2 {
+  position: absolute;
+  left: -103px;
+  bottom: -215px;
+}
+
+.secondItem {
+  max-height: 550px;
+  margin-left: 170px;
+}
+
+.secondItem__body {
+  width: 827px;
+  height: 550px;
+}
+.secondItem__body ::-webkit-scrollbar {
+  width: 22.5px;
+}
+.secondItem__body ::-webkit-scrollbar-thumb {
+  width: 22.5px;
+  background: linear-gradient(95deg, #fc4485 10%, #fc4485 20%, #c96789 60%, #c96789 80%, #fff 100%);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.secondItem__body ::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, transparent 40%, rgb(0, 0, 0) 40%, rgb(0, 0, 0) 60%, transparent 60%);
+  width: 12.5px;
+  border-radius: 46%;
+  -webkit-border-radius: 46%;
+  -moz-border-radius: 46%;
+  -ms-border-radius: 46%;
+  -o-border-radius: 46%;
+}
+
+.secondItem__caption {
+  max-width: 182.5px;
+  font-size: 22.5px;
+  font-family: "Myriad Pro";
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+  margin-bottom: 35.5px;
+  letter-spacing: 4px;
+}
+
+.secondItem__scrollBlock {
+  overflow: auto;
+  width: 824px;
+  height: 446px;
+  padding: 20px;
+  text-align: left;
+  direction: rtl;
+}
+
+.secondItem__scrollBlock-cyst {
+  background-color: rgb(246, 246, 246);
+  height: 467px;
+  position: absolute;
+  top: 63px;
+  width: 756px;
+  border-radius: 34px;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  -o-border-radius: 34px;
+}
+
+.secondItem__text {
+  height: 1583px;
+  font-size: 20px;
+  font-family: "Myriad Pro3";
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  background-color: rgb(246, 246, 246);
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-y: hidden;
+  position: relative;
+  border-radius: 34px;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  -o-border-radius: 34px;
+}
+
+.secondItem__lowestSperm {
+  position: absolute;
+  right: -110px;
+  bottom: -57px;
+  z-index: -1;
+}
+
+.secondItem__anotherOne {
+  position: absolute;
+  z-index: -1;
+  left: -83px;
+  top: -135px;
+}
+
+.secondItem__anotherOneDown {
+  position: absolute;
+  z-index: -1;
+  bottom: -47px;
+  right: -138px;
+}
+
+.secondItem__bigestOne {
+  position: absolute;
+  z-index: -1;
+  top: -167px;
+  left: -112px;
+}
+
+.secondItem__middeleUpSperm {
+  position: absolute;
+  z-index: -1;
+  top: -141px;
+  left: -100px;
+}
+
+.thirdItem {
+  margin-left: 170px;
+}
+
+.thirdItem__subCaption {
+  font-size: 22.5px;
+  white-space: nowrap;
+  font-family: "Myriad Pro";
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.thirdItem__caption {
+  font-size: 99px;
+  font-family: "Myriad Pro3";
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 7.5px;
+}
+.thirdItem__caption span {
+  font-family: "Myriad Pro";
+  font-weight: 900;
+}
+
+.thirdItem__downside {
+  margin-top: 70px;
+}
+
+.thirdDown__body {
+  display: flex;
+}
+
+.thirdDown__leftSide-body {
+  background-color: rgb(23, 19, 19);
+  position: relative;
+  padding-left: 100px;
+  border-radius: 34px;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  -o-border-radius: 34px;
+}
+
+.thirdDown__leftSide-text {
+  font-size: 20px;
+  font-family: "Myriad Pro3";
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  padding: 20px;
+  max-width: 224px;
+  padding: 40px 30px 40px 0px;
+}
+
+.thirdDown__leftSide-img {
+  position: absolute;
+  top: -36px;
+}
+
+.thirdDown__upStructure {
+  background-color: rgb(24, 16, 16);
+  position: relative;
+  border-radius: 34px;
+}
+
+.thirdDown__rightSide-text {
+  font-size: 20px;
+  max-width: 140px;
+  font-family: "Myriad Pro3";
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  background-color: rgb(24, 16, 16);
+  padding: 40px 30px 40px 0px;
+}
+
+.thirdDown__rightSide-img {
+  position: absolute;
+  top: -36px;
+}
+
+.thirdDown__texT {
+  font-size: 20px;
+  font-family: "Myriad Pro3";
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
