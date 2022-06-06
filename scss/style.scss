@@ -6,6 +6,9 @@
     background-repeat: no-repeat;
     background-size:1024px 768px  ;  
 }*/
+html{
+   overflow: hidden;
+}
 
 @media (max-width:1024px) {
     body{
@@ -21,10 +24,11 @@ body{
 }
 .wrapper__background{
     height: 768px;
-    overflow: hidden;
-    overflow-y: hidden;
-    overflow-x: hidden;
-
+    transition: all 1s ease 0.2s;
+    -webkit-transition: all 1s ease 0.2s;
+    -moz-transition: all 1s ease 0.2s;
+    -ms-transition: all 1s ease 0.2s;
+    -o-transition: all 1s ease 0.2s;
 }
 
 .wrapper{position: relative;
@@ -75,6 +79,11 @@ body{
     top: 150px;
     width: 1024px;
     height: 768px;
+    transition: all 1s ease 0.2s;
+    -webkit-transition: all 1s ease 0.2s;
+    -moz-transition: all 1s ease 0.2s;
+    -ms-transition: all 1s ease 0.2s;
+    -o-transition: all 1s ease 0.2s;
 }
 .mouvablePart__body {
     display: flex;
@@ -171,6 +180,85 @@ body{
     position: absolute;
     right: 130px;
     top: 12%;
+    animation-name: underTask;
+    animation-duration: 38s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes underTask{
+    0%{
+        right: 130px;
+        transform: rotate(20deg);
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        -o-transform: rotate(20deg);
+}
+15%{
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+}
+    25%{
+        right: 200px;
+        top: 10%;
+        transform: rotate(60deg);
+        -webkit-transform: rotate(60deg);
+        -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+        -o-transform: rotate(60deg);
+}
+35%{
+    transform: rotate(80deg);
+    -webkit-transform: rotate(80deg);
+    -moz-transform: rotate(80deg);
+    -ms-transform: rotate(80deg);
+    -o-transform: rotate(80deg);
+}
+        50%{
+            right: 300px;
+            top: 7%;
+            transform: rotate(100deg);
+            -webkit-transform: rotate(100deg);
+            -moz-transform: rotate(100deg);
+            -ms-transform: rotate(100deg);
+            -o-transform: rotate(100deg);
+}
+60%{
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+}
+    75%{
+        right: 200;
+        top: 5%;
+        transform: rotate(140deg);
+        -webkit-transform: rotate(140deg);
+        -moz-transform: rotate(140deg);
+        -ms-transform: rotate(140deg);
+        -o-transform: rotate(140deg);
+}
+85%{
+    transform: rotate(160deg);
+    -webkit-transform: rotate(160deg);
+    -moz-transform: rotate(160deg);
+    -ms-transform: rotate(160deg);
+    -o-transform: rotate(160deg);
+}
+    100%{
+        right: 130px;
+        top: 12%;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+}
 }
 
 .firstItem__overHello{
@@ -182,6 +270,86 @@ body{
     position: absolute;
     right: 269px;
     top: -73px;
+    animation-name:aboveSperm ;
+    animation-duration: 38s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes aboveSperm{
+    0%{
+        right: 269px;
+        transform: rotate(20deg) scale3d(1,1,1);
+        -webkit-transform: rotate(20deg) scale3d(1,1,1);
+        -moz-transform: rotate(20deg) scale3d(1,1,1);
+        -ms-transform: rotate(20deg) scale3d(1,1,1);
+        -o-transform: rotate(20deg) scale3d(1,1,1);
+}
+15%{
+    right: 260px;
+    transform: rotate(40deg) scale3d(0.95,0.95,0.95);
+    -webkit-transform: rotate(40deg) scale3d(0.95,0.95,0.95);
+    -moz-transform: rotate(40deg) scale3d(0.95,0.95,0.95);
+    -ms-transform: rotate(40deg) scale3d(0.95,0.95,0.95);
+    -o-transform: rotate(40deg) scale3d(0.95,0.95,0.95);
+}
+    25%{
+        right: 250px;
+        transform: rotate(60deg) scale3d(0.9,0.9,0.9);
+        -webkit-transform: rotate(60deg) scale3d(0.9,0.9,0.9);
+        -moz-transform: rotate(60deg) scale3d(0.9,0.9,0.9);
+        -ms-transform: rotate(60deg) scale3d(0.9,0.9,0.9);
+        -o-transform: rotate(60deg) scale3d(0.9,0.9,0.9);
+}
+35%{
+    right: 240px;
+    transform: rotate(80deg) scale3d(0.85,0.85,0.85);
+    -webkit-transform: rotate(80deg) scale3d(0.85,0.85,0.85);
+    -moz-transform: rotate(80deg) scale3d(0.85,0.85,0.85);
+    -ms-transform: rotate(80deg) scale3d(0.85,0.85,0.85);
+    -o-transform: rotate(80deg) scale3d(0.85,0.85,0.85);
+}
+        50%{
+            right: 230px;
+            transform: rotate(100deg) scale3d(0.9,0.9,0.9);
+            -webkit-transform: rotate(100deg) scale3d(0.9,0.9,0.9);
+            -moz-transform: rotate(100deg) scale3d(0.9,0.9,0.9);
+            -ms-transform: rotate(100deg) scale3d(0.9,0.9,0.9);
+            -o-transform: rotate(100deg) scale3d(0.9,0.9,0.9);
+}
+60%{
+    right: 220px;
+    transform: rotate(120deg) scale3d(0.95,0.95,0.95);
+    -webkit-transform: rotate(120deg) scale3d(0.95,0.95,0.95);
+    -moz-transform: rotate(120deg) scale3d(0.95,0.95,0.95);
+    -ms-transform: rotate(120deg) scale3d(0.95,0.95,0.95);
+    -o-transform: rotate(120deg) scale3d(0.95,0.95,0.95);
+}
+    75%{
+        right: 240;
+        transform: rotate(140deg) scale3d(0.9,0.9,0.9);
+        -webkit-transform: rotate(140deg) scale3d(0.9,0.9,0.9);
+        -moz-transform: rotate(140deg) scale3d(0.9,0.9,0.9);
+        -ms-transform: rotate(140deg) scale3d(0.9,0.9,0.9);
+        -o-transform: rotate(140deg) scale3d(0.9,0.9,0.9);
+}
+85%{
+    right: 250px;
+    transform: rotate(160deg) scale3d(0.95,0.95,0.95);;
+    -webkit-transform: rotate(160deg) ;
+    -moz-transform: rotate(160deg) ;
+    -ms-transform: rotate(160deg) ;
+    -o-transform: rotate(160deg) ;
+}
+    100%{
+        right: 269px;
+        transform: rotate(180deg)  scale3d(1,1,1);
+        -webkit-transform: rotate(180deg)  scale3d(1,1,1);
+        -moz-transform: rotate(180deg)  scale3d(1,1,1);
+        -ms-transform: rotate(180deg)  scale3d(1,1,1);
+        -o-transform: rotate(180deg)  scale3d(1,1,1);
+}
 }
 .firstItem__blueSpot{
     position: absolute;
@@ -198,6 +366,95 @@ body{
     position: absolute;
     bottom: 150px;
     right: 390px;
+    animation-name: bigBottomSubstance;
+    animation-duration: 38s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bigBottomSubstance{
+    0%{
+        right: 390px;
+        bottom: 150px;
+        transform: scale3d(1,1,1);
+        -webkit-transform: scale3d(1,1,1);
+        -moz-transform: scale3d(1,1,1);
+        -ms-transform: scale3d(1,1,1);
+        -o-transform: scale3d(1,1,1);
+}
+15%{
+    right: 400px;
+    bottom: 140px;
+    transform:  scale3d(0.95,0.95,0.95);
+    -webkit-transform:  scale3d(0.95,0.95,0.95);
+    -moz-transform:  scale3d(0.95,0.95,0.95);
+    -ms-transform:  scale3d(0.95,0.95,0.95);
+    -o-transform:  scale3d(0.95,0.95,0.95);
+}
+    25%{
+        right: 410px;
+        bottom: 130px;
+        transform:  scale3d(0.9,0.9,0.9);
+        -webkit-transform:  scale3d(0.9,0.9,0.9);
+        -moz-transform:  scale3d(0.9,0.9,0.9);
+        -ms-transform:  scale3d(0.9,0.9,0.9);
+        -o-transform:  scale3d(0.9,0.9,0.9);
+}
+35%{
+    right: 420px;
+    bottom: 120px;
+    transform:  scale3d(0.85,0.85,0.85);
+    -webkit-transform:  scale3d(0.85,0.85,0.85);
+    -moz-transform:  scale3d(0.85,0.85,0.85);
+    -ms-transform:  scale3d(0.85,0.85,0.85);
+    -o-transform:  scale3d(0.85,0.85,0.85);
+}
+        50%{
+            right: 430px;
+            bottom: 110px;
+            transform:  scale3d(0.9,0.9,0.9);
+            -webkit-transform:  scale3d(0.9,0.9,0.9);
+            -moz-transform:  scale3d(0.9,0.9,0.9);
+            -ms-transform:  scale3d(0.9,0.9,0.9);
+            -o-transform:  scale3d(0.9,0.9,0.9);
+}
+60%{
+    right: 420px;
+    bottom: 120px;
+    transform:  scale3d(0.95,0.95,0.95);
+    -webkit-transform:  scale3d(0.95,0.95,0.95);
+    -moz-transform:  scale3d(0.95,0.95,0.95);
+    -ms-transform:  scale3d(0.95,0.95,0.95);
+    -o-transform:  scale3d(0.95,0.95,0.95);
+}
+    75%{
+        right: 410px;
+        bottom: 130px;
+        transform:  scale3d(0.9,0.9,0.9);
+        -webkit-transform:  scale3d(0.9,0.9,0.9);
+        -moz-transform:  scale3d(0.9,0.9,0.9);
+        -ms-transform:  scale3d(0.9,0.9,0.9);
+        -o-transform:  scale3d(0.9,0.9,0.9);
+}
+85%{
+    right: 400px;
+    bottom: 140px;
+    transform:  scale3d(0.95,0.95,0.95);
+    -webkit-transform:  scale3d(0.95,0.95,0.95);
+    -moz-transform:  scale3d(0.95,0.95,0.95);
+    -ms-transform:  scale3d(0.95,0.95,0.95);
+    -o-transform:  scale3d(0.95,0.95,0.95);
+}
+    100%{
+        right: 390px;
+        bottom: 150px;
+        transform:   scale3d(1,1,1);
+        -webkit-transform:   scale3d(1,1,1);
+        -moz-transform:   scale3d(1,1,1);
+        -ms-transform:   scale3d(1,1,1);
+        -o-transform:   scale3d(1,1,1);
+}
 }
 
 .firstItem__pinkSperm{
@@ -209,6 +466,58 @@ body{
     position: absolute;
     left: -47px;
     bottom: 350px;
+    animation-name:nearTask ;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes nearTask{
+    0%{
+        bottom: 350px;
+        left: -47px;
+
+}
+15%{
+    bottom: 340px;
+    left: -40px;
+
+}
+    25%{
+        bottom: 330px;
+        left: -33px;
+
+}
+35%{
+    bottom: 320px;
+    left: -26px;
+
+}
+        50%{
+            bottom: 310px;
+            left: -19px;
+
+}
+60%{
+    bottom: 320px;
+    left: -26px;
+
+}
+    75%{
+        bottom: 330px;
+        left: -33px;
+
+}
+85%{
+    bottom: 340px;
+    left: -40px;
+
+}
+    100%{
+        bottom: 350px;
+        left: -47px;
+}
 }
 .firstItem__sperm2{
     position: absolute;
@@ -268,12 +577,16 @@ body{
     padding: 20px;
     text-align: left;
     direction: rtl;
+    position: relative;
+    z-index: 4;
 }
 .secondItem__scrollBlock-cyst{
     background-color:rgb(246, 246, 246);
     height: 467px;
     position: absolute;
+    z-index: 3;
     top: 63px;
+    left: 999px;
     width: 756px;
     border-radius: 34px;
     -webkit-border-radius: 34px;
@@ -294,42 +607,317 @@ body{
     padding-right: 20px;
     overflow-y: hidden;
     position: relative;
-    border-radius: 34px;
-    -webkit-border-radius: 34px;
-    -moz-border-radius: 34px;
-    -ms-border-radius: 34px;
-    -o-border-radius: 34px;
+    z-index: 4;
+}
+.mouvablePart.spermAnim{
+    .secondItem__bigestOne{
+        animation-name: bigestOne;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        top: -170px;
+        left: 855px;
+        
+}
+    @keyframes bigestOne{
+        0%{
+
+            top: -130px;
+            left: 895px;
+    }
+    15%{
+        top: -135px;
+        left: 890px;
+
+    }
+        25%{
+            top: -140px;
+            left: 885px;
+
+    }
+    35%{
+        top: -145px;
+        left: 880px;
+    }
+            50%{
+                top: -150px;
+                left: 875px;
+    }
+    60%{
+        top: -155px;
+        left: 870pxz
+    }
+        75%{
+
+            top: -160px;
+            left: 865px;
+    }
+    85%{
+        top: -165px;
+        left: 860px;
+    }
+        100%{
+            top: -170px;
+            left: 855px;
+            opacity: 1;
+            visibility: visible;
+    }
+    }
+    .secondItem__middeleUpSperm{
+        animation-name: middeleUpSperm;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        top: -171px;
+        left: 894px;
+        
+    }
+    @keyframes middeleUpSperm{
+        0%{
+
+            top: -131px;
+            left: 934px;
+    }
+    15%{
+        top: -136px;
+        left: 929px;
+
+    }
+        25%{
+            top: -141px;
+            left: 924px;
+
+    }
+    35%{
+        top: -146px;
+        left: 919px;
+    }
+            50%{
+                top: -151px;
+                left: 914px;
+    }
+    60%{
+        top: -156px;
+        left: 909px;
+    }
+        75%{
+
+            top: -161px;
+            left: 904px;
+    }
+    85%{
+        top: -166px;
+        left: 899px;
+    }
+        100%{
+            top: -171px;
+            left: 894px;
+            opacity: 1;
+            visibility: visible;
+    }
+    }
+    .secondItem__anotherOneDown{
+        animation-name: anotherOneDown;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        bottom: -170px;
+        right: -1167px;
+    }
+    @keyframes anotherOneDown{
+        0%{
+
+            bottom: -210px;
+            right: -1207px;
+    }
+    15%{
+        bottom: -205px;
+        right: -1202px;
+
+    }
+        25%{
+            bottom: -200px;
+            right: -1197px;
+
+    }
+    35%{
+        bottom: -195px;
+        right: -1192px;
+    }
+            50%{
+                bottom: -190px;
+                right: -1187px;
+    }
+    60%{
+        bottom: -185px;
+        right:- 1182px;
+    }
+        75%{
+
+            bottom: -180px;
+            right: -1177px;
+    }
+    85%{
+        bottom: -175px;
+        right: -1172px;
+    }
+        100%{
+            bottom: -170px;
+            right: -1167px;
+            opacity: 1;
+            visibility: visible;
+    }
+}
+.secondItem__lowestSperm{
+    animation-name: lowestSperm;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    right: -868px;
+    bottom: 135px;
 }
 
+@keyframes lowestSperm{
+    0%{
+
+        bottom: 95px;
+        right: -908px;
+}
+15%{
+    bottom: 100px;
+    right: -903px;
+
+}
+    25%{
+        bottom: 105px;
+        right: -898px;
+
+}
+35%{
+    bottom: 110px;
+    right: -893px;
+}
+        50%{
+            bottom: 115px;
+            right: -888px;
+}
+60%{
+    bottom: 120px;
+    right: -883px;
+}
+    75%{
+
+        bottom: 125px;
+        right: -878px;
+}
+85%{
+    bottom: 130px;
+    right: -873px;
+}
+    100%{
+        right: -868px;
+        bottom: 135px;
+        opacity: 1;
+        visibility: visible;
+}
+}
+.secondItem__anotherOne{
+    left: 890px;
+    top: -162px;
+    animation-name: anotherOne;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes anotherOne{
+    0%{
+
+        left: 930px;
+        top: -122px;
+}
+15%{
+    left: 925px;
+    top: -127px;
+
+}
+    25%{
+        left: 920px;
+        top: -132px;
+
+}
+35%{
+    left: 915px;
+    top: -137px;
+}
+        50%{
+            left: 910px;
+            top: -142px;
+}
+60%{
+    left: 905px;
+    top: -147px;
+}
+    75%{
+
+        left: 900px;
+        top: -152px;
+}
+85%{
+    left: 895px;
+    top: -157px;
+}
+    100%{
+        left: 890px;
+        top: -162px;
+        opacity: 1;
+        visibility: visible;
+}
+}
+}
 .secondItem__lowestSperm{
     position: absolute;
-    right: -110px;
-    bottom: -57px;
-    z-index: -1;
+    right: -868px;
+    bottom: 135px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
 }
 .secondItem__anotherOne{
     position: absolute;
-    z-index: -1;
-    left: -83px;
-    top: -135px;
+    z-index: 1;
+    left: 890px;
+    top: -162px;
+    visibility: hidden;
+    opacity: 0;
 }
 .secondItem__anotherOneDown{
     position: absolute;
-    z-index: -1;
-    bottom: -47px;
-    right: -138px;
+    z-index: 1;
+    bottom: -170px;
+    right: -1167px;
+    opacity: 0;
+    visibility: hidden;
 }
 .secondItem__bigestOne{
     position: absolute;
-    z-index: -1;
-    top: -167px;
-    left: -112px;
+    z-index: 1;
+    top: -170px;
+    left: 855px;
+    opacity: 0;
+    visibility: hidden;
 }
 .secondItem__middeleUpSperm{
     position: absolute;
-    z-index: -1;
-    top: -141px;
-    left: -100px;
+    z-index: 1;
+    top: -171px;
+    left: 894px;
+    opacity: 0;
+    visibility: hidden;
 }
 
 
@@ -340,12 +928,39 @@ body{
     margin-left: 170px;
     
 }
+.thirdItem.popUpActive{
+    .thirdItem__downside {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+    .thirdItem__caption{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+    .thirdItem__subCaption {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+    .popUP{
+        background-color: rgb(104 104 104 / 84%);
+    margin-left: -32px;
+    margin-top: -150px;
+    padding-left: 32px;
+    padding-top: 150px;
+    height: 1000px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
 .thirdItem__body {
     width: 1024px;
     height: 768px;
 }
 .thirdItem__subCaption {
-    
+    position: relative;
     font-size: 22.5px;
     white-space: nowrap;
     font-family: 'Myriad Pro';
@@ -354,9 +969,9 @@ body{
     -webkit-font-smoothing: subpixel-antialiased;
     display: flex;
     justify-content: space-around;
-    display: none;
 }
 .thirdItem__caption {
+    position: relative;
     font-size: 99px;
     font-family: 'Myriad Pro3';
     font-weight: 200;
@@ -368,15 +983,14 @@ body{
         font-family: 'Myriad Pro';
         font-weight: 900;
     }
-    display: none;
 }
 .thirdItem__downside {
+    position: relative;
     margin-top: 70px;
     display: flex;
     justify-content: center;
 }
 .thirdDown {
-    display: none;
 }
 .thirdDown__body {
     display: flex;
@@ -478,45 +1092,442 @@ body{
     left: -189px;
     top: 149px;
     z-index: 51;
+    animation-name:middlePinkBuble;
+    animation-duration: 4s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes middlePinkBuble{
+0%{
+    left: -189px;
+    top: 149px;
+}
+100%{
+    left: -140px;
+    top: 190px;
+    transform: scale3d(0.7,0.7,0.7);
+    -webkit-transform: scale3d(0.7,0.7,0.7);
+    -moz-transform: scale3d(0.7,0.7,0.7);
+    -ms-transform: scale3d(0.7,0.7,0.7);
+    -o-transform: scale3d(0.7,0.7,0.7);
+}
 }
 .thirdItem__tinyBlueBuble{
     position: absolute;
     top: 68px;
     left: -204px;
     z-index: 51;
+    animation-name:tinyBlueBuble;
+    animation-duration: 5s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes tinyBlueBuble {
+    0%{     top: 68px;
+        left: -204px;
+
+}
+15%{
+    top: 72px;
+    left: -200px;
+    transform: scale3d(0.99,0.99,0.99);
+    -webkit-transform: scale3d(0.99,0.99,0.99);
+    -moz-transform: scale3d(0.99,0.99,0.99);
+    -ms-transform: scale3d(0.99,0.99,0.99);
+    -o-transform: scale3d(0.99,0.99,0.99);
+}
+    25%{
+        top: 77px;
+        left: -195px;
+        transform: scale3d(0.95,0.95,0.95);
+        -webkit-transform: scale3d(0.95,0.95,0.95);
+        -moz-transform: scale3d(0.95,0.95,0.95);
+        -ms-transform: scale3d(0.95,0.95,0.95);
+        -o-transform: scale3d(0.95,0.95,0.95);
+}
+35%{
+    top: 83px;
+    left: -190px;
+    transform: scale3d(0.91,0.91,0.91);
+    -webkit-transform: scale3d(0.91,0.91,0.91);
+    -moz-transform: scale3d(0.91,0.91,0.91);
+    -ms-transform: scale3d(0.91,0.91,0.91);
+    -o-transform: scale3d(0.91,0.91,0.91);
+}
+        50%{
+            top: 88px;
+            left: -185px;
+            transform: scale3d(0.87,0.87,0.87);
+            -webkit-transform: scale3d(0.87,0.87,0.87);
+            -moz-transform: scale3d(0.87,0.87,0.87);
+            -ms-transform: scale3d(0.87,0.87,0.87);
+            -o-transform: scale3d(0.87,0.87,0.87);
+}
+60%{
+    top: 91px;
+    left: -182px;
+    transform: scale3d(0.83,0.83,0.83);
+    -webkit-transform: scale3d(0.83,0.83,0.83);
+    -moz-transform: scale3d(0.83,0.83,0.83);
+    -ms-transform: scale3d(0.83,0.83,0.83);
+    -o-transform: scale3d(0.83,0.83,0.83);
+}
+    75%{
+        top: 95px;
+        left: -179px;
+        transform: scale3d(0.79,0.79,0.79);
+        -webkit-transform: scale3d(0.79,0.79,0.79);
+        -moz-transform: scale3d(0.79,0.79,0.79);
+        -ms-transform: scale3d(0.79,0.79,0.79);
+        -o-transform: scale3d(0.79,0.79,0.79);
+}
+85%{
+    top: 99px;
+    left: -176px;
+    transform: scale3d(0.75,0.75,0.75);
+    -webkit-transform: scale3d(0.75,0.75,0.75);
+    -moz-transform: scale3d(0.75,0.75,0.75);
+    -ms-transform: scale3d(0.75,0.75,0.75);
+    -o-transform: scale3d(0.75,0.75,0.75);
+}
+    100%{
+        top: 101px;
+        left: -171px;
+        transform: scale3d(0.71,0.71,0.71);
+        -webkit-transform: scale3d(0.71,0.71,0.71);
+        -moz-transform: scale3d(0.71,0.71,0.71);
+        -ms-transform: scale3d(0.71,0.71,0.71);
+        -o-transform: scale3d(0.71,0.71,0.71);
+}
 }
 .thirdItem__bigestBlueBuble{
     position: absolute;
     left: 0px;
     bottom: -181px;
     z-index: 51;
+    animation-name:bigestBlueBuble;
+    animation-duration: 10s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bigestBlueBuble{
+    0%{ transform: scale3d(0.95,0.95,0.95); 
+        -webkit-transform: scale3d(0.95,0.95,0.95); 
+        -moz-transform: scale3d(0.95,0.95,0.95); 
+        -ms-transform: scale3d(0.95,0.95,0.95); 
+        -o-transform: scale3d(0.95,0.95,0.95);
+        bottom: -190px;
+}
+15%{
+    transform: scale3d(0.9,0.9,0.9);
+    -webkit-transform: scale3d(0.9,0.9,0.9);
+    -moz-transform: scale3d(0.9,0.9,0.9);
+    -ms-transform: scale3d(0.9,0.9,0.9);
+    -o-transform: scale3d(0.9,0.9,0.9);
+    bottom: -192px;
+}
+    25%{
+        transform: scale3d(0.85,0.85,0.85);
+        -webkit-transform: scale3d(0.85,0.85,0.85);
+        -moz-transform: scale3d(0.85,0.85,0.85);
+        -ms-transform: scale3d(0.85,0.85,0.85);
+        -o-transform: scale3d(0.85,0.85,0.85);
+        bottom: -194px;
+}
+35%{
+    transform: scale3d(0.83,0.83,0.83);
+    -webkit-transform: scale3d(0.83,0.83,0.83);
+    -moz-transform: scale3d(0.83,0.83,0.83);
+    -ms-transform: scale3d(0.83,0.83,0.83);
+    -o-transform: scale3d(0.83,0.83,0.83);
+    bottom: -196px;
+}
+        50%{
+            transform: scale3d(0.80,0.80,0.80);
+            -webkit-transform: scale3d(0.80,0.80,0.80);
+            -moz-transform: scale3d(0.80,0.80,0.80);
+            -ms-transform: scale3d(0.80,0.80,0.80);
+            -o-transform: scale3d(0.80,0.80,0.80);
+            bottom: -198px;
+}
+60%{
+    transform: scale3d(0.75,0.75,0.75);
+    -webkit-transform: scale3d(0.75,0.75,0.75);
+    -moz-transform: scale3d(0.75,0.75,0.75);
+    -ms-transform: scale3d(0.75,0.75,0.75);
+    -o-transform: scale3d(0.75,0.75,0.75);
+    bottom: -200px;
+}
+    75%{
+        transform: scale3d(0.70,0.70,0.70);
+        -webkit-transform: scale3d(0.70,0.70,0.70);
+        -moz-transform: scale3d(0.70,0.70,0.70);
+        -ms-transform: scale3d(0.70,0.70,0.70);
+        -o-transform: scale3d(0.70,0.70,0.70);
+        bottom: -202px;
+}
+85%{
+    transform: scale3d(0.65,0.65,0.65);
+    -webkit-transform: scale3d(0.65,0.65,0.65);
+    -moz-transform: scale3d(0.65,0.65,0.65);
+    -ms-transform: scale3d(0.65,0.65,0.65);
+    -o-transform: scale3d(0.65,0.65,0.65);
+    bottom: -204px;
+}
+    100%{
+        transform: scale3d(0.6,0.6,0.6);
+        -webkit-transform: scale3d(0.6,0.6,0.6);
+        -moz-transform: scale3d(0.6,0.6,0.6);
+        -ms-transform: scale3d(0.6,0.6,0.6);
+        -o-transform: scale3d(0.6,0.6,0.6);
+        bottom: -206px;
+}
 }
 .thirdItem__middleBlueBuble{
     position: absolute;
     left: -26px;
     top: -194px;
     z-index: 51;
+    animation-name: middleBlueBuble;
+    animation-duration: 12s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes middleBlueBuble{
+
+    0%{    left: -26px;
+        top: -194px;
+
+}
+15%{
+    left: -21px;
+    top: -189px;
+
+}
+    25%{
+        left: -16px;
+        top: -184px;
+
+}
+35%{
+    left: -11px;
+    top: -179px;
+}
+        50%{
+            left: -6px;
+            top: -174px;
+}
+60%{
+    left: -1px;
+    top: -169px;
+}
+    75%{
+        left: 4px;
+        top: -164px;
+}
+85%{
+    left: 9px;
+    top: -159px;
+}
+    100%{left: 14px;
+        top: -154px;
+
+}
 }
 .thirdItem__saturatedPinkBuble{
     position: absolute;
     top: -129px;
     left: -130px;
     z-index: -1;
+    animation-name: saturatedPinkBuble;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+
+@keyframes saturatedPinkBuble{
+0%{
+    top: -149px;
+    left: -149px;
+}
+50%{
+left: -110px;
+top: -115px;
+}
+100%{
+    left: -99px;
+    top: -99px;
+}
+}
+
 .thirdItem__bigestPinkBuble{
     position: absolute;
     left: -30px;
     top: -29px;
+    animation-name: bigestPinkBuble;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bigestPinkBuble{
+0%{
+    left: -30px;
+    top: -29px;
+}
+50%{
+    left: 0px;
+    top: -59px;
+    transform: scale3d(0.85,0.85,0.85);
+    -webkit-transform: scale3d(0.85,0.85,0.85);
+    -moz-transform: scale3d(0.85,0.85,0.85);
+    -ms-transform: scale3d(0.85,0.85,0.85);
+    -o-transform: scale3d(0.85,0.85,0.85);
+}
+100%{
+    left: 10px;
+    top: -29px;
+    transform: scale3d(0.7,0.7,0.70);
+    -webkit-transform: scale3d(0.7,0.7,0.70);
+    -moz-transform: scale3d(0.7,0.7,0.70);
+    -ms-transform: scale3d(0.7,0.7,0.70);
+    -o-transform: scale3d(0.7,0.7,0.70);
+}
 }
 .thirdItem__topBlueBuble{
     position: absolute;
     top: -275px;
     left: -12px;
+    animation-name: topBlueBuble;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes topBlueBuble {
+    0%{   top: -275px;
+        left: -12px;
+
+}
+15%{
+    top: -270px;
+    left: -7px;
+
+}
+    25%{
+        top: -265px;
+        left: -2px;
+
+}
+35%{
+    top: -260px;
+    left: 3px;
+}
+        50%{
+            top: -260px;
+            left: -5px;
+}
+60%{
+    top: -260px;
+    left: -12px;
+}
+    75%{
+
+        top: -263px;
+        left: -17px;
+}
+85%{
+    top: -268px;
+    left: -12px;
+}
+    100%{        top: -275px;
+        left: -12px;
+
+}
 }
 .thirdItem__bottomBlueBuble{
     position: absolute;
     bottom: -14px;
     left: 40px;
+    animation-name: bottomBlueBuble;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bottomBlueBuble{
+    0%{     bottom: -14px;
+        left: 45px;
+
+}
+15%{
+    bottom: -14px;
+    left: 50px;
+
+}
+    25%{
+        bottom: -14px;
+        left: 55px;
+
+}
+35%{
+    bottom: -14px;
+    left: 60px;
+}
+        50%{
+            bottom: -19px;
+            left: 57px;
+            transform: scale3d(0.93,0.93,0.93);
+            -webkit-transform: scale3d(0.93,0.93,0.93);
+            -moz-transform: scale3d(0.93,0.93,0.93);
+            -ms-transform: scale3d(0.93,0.93,0.93);
+            -o-transform: scale3d(0.93,0.93,0.93);
+}
+60%{
+    bottom: -24px;
+    left: 53px;
+    transform: scale3d(0.86,0.86,0.86);
+    -webkit-transform: scale3d(0.86,0.86,0.86);
+    -moz-transform: scale3d(0.86,0.86,0.86);
+    -ms-transform: scale3d(0.86,0.86,0.86);
+    -o-transform: scale3d(0.86,0.86,0.86);
+}
+    75%{
+        bottom: -29px;
+        left: 50px;
+        transform: scale3d(0.81,0.81,0.81);
+        -webkit-transform: scale3d(0.81,0.81,0.81);
+        -moz-transform: scale3d(0.81,0.81,0.81);
+        -ms-transform: scale3d(0.81,0.81,0.81);
+        -o-transform: scale3d(0.81,0.81,0.81);
+}
+85%{
+    bottom: -22px;
+    left: 47px;
+    transform: scale3d(0.93,0.93,0.93);
+    -webkit-transform: scale3d(0.93,0.93,0.93);
+    -moz-transform: scale3d(0.93,0.93,0.93);
+    -ms-transform: scale3d(0.93,0.93,0.93);
+    -o-transform: scale3d(0.93,0.93,0.93);
+}
+    100%{
+        bottom: -17px;
+        left: 43px;
+        transform: scale3d(1.03,1.03,1.03);
+        -webkit-transform: scale3d(1.03,1.03,1.03);
+        -moz-transform: scale3d(1.03,1.03,1.03);
+        -ms-transform: scale3d(1.03,1.03,1.03);
+        -o-transform: scale3d(1.03,1.03,1.03);
+}
 }
 
 
@@ -526,6 +1537,8 @@ body{
 }
 .popUP {
     margin-left: 30px;
+    opacity: 0;
+    visibility: hidden;
 }
 .popUp__body {
     margin-left: 100px;
@@ -573,6 +1586,8 @@ body{
     -o-transform: rotate(-45deg) translate(0px, -3px);
 }
 .popUP__subCaption {
+    position: relative;
+    z-index: 56;
     max-width: 540px;
     font-size: 22.5px;
     white-space: nowrap;
@@ -583,6 +1598,8 @@ body{
     display: flex;
 }
 .popUP__caption {
+    position: relative;
+    z-index: 56;
     max-width: 540px;
     font-size: 99px;
     font-family: 'Myriad Pro3';
@@ -607,45 +1624,455 @@ body{
     left: -116px;
     bottom: 57px;
     z-index: 51;
+    animation-name:popUPmiddlePinkBuble;
+    animation-duration: 4s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes popUPmiddlePinkBuble{
+    0%{
+
+        left: -116px;
+        bottom: 57px;
+    }
+    100%{
+
+        left: -67px;
+        bottom: 16px;
+        transform: scale3d(0.7,0.7,0.7);
+        -webkit-transform: scale3d(0.7,0.7,0.7);
+        -moz-transform: scale3d(0.7,0.7,0.7);
+        -ms-transform: scale3d(0.7,0.7,0.7);
+        -o-transform: scale3d(0.7,0.7,0.7);
+    }
 }
 .popUP__tinyBlueBuble {
     position: absolute;
     bottom: 200px;
     left: -131px;
     z-index: 51;
+    animation-name:popUtinyBlueBuble;
+    animation-duration: 10s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes popUtinyBlueBuble{
+    0%{
+        bottom: 200px;
+        left: -131px;
+}
+15%{
+
+    bottom: 196px;
+    left: -127px;
+    transform: scale3d(0.99,0.99,0.99);
+    -webkit-transform: scale3d(0.99,0.99,0.99);
+    -moz-transform: scale3d(0.99,0.99,0.99);
+    -ms-transform: scale3d(0.99,0.99,0.99);
+    -o-transform: scale3d(0.99,0.99,0.99);
+}
+    25%{
+
+        bottom: 191px;
+        left: -122px;
+        transform: scale3d(0.95,0.95,0.95);
+        -webkit-transform: scale3d(0.95,0.95,0.95);
+        -moz-transform: scale3d(0.95,0.95,0.95);
+        -ms-transform: scale3d(0.95,0.95,0.95);
+        -o-transform: scale3d(0.95,0.95,0.95);
+}
+35%{
+
+    bottom: 185px;
+    left: -117px;
+    transform: scale3d(0.91,0.91,0.91);
+    -webkit-transform: scale3d(0.91,0.91,0.91);
+    -moz-transform: scale3d(0.91,0.91,0.91);
+    -ms-transform: scale3d(0.91,0.91,0.91);
+    -o-transform: scale3d(0.91,0.91,0.91);
+}
+        50%{
+
+            bottom: 180px;
+            left: -112px;
+            transform: scale3d(0.87,0.87,0.87);
+            -webkit-transform: scale3d(0.87,0.87,0.87);
+            -moz-transform: scale3d(0.87,0.87,0.87);
+            -ms-transform: scale3d(0.87,0.87,0.87);
+            -o-transform: scale3d(0.87,0.87,0.87);
+}
+60%{
+
+    bottom: 177px;
+    left: -108px;
+    transform: scale3d(0.83,0.83,0.83);
+    -webkit-transform: scale3d(0.83,0.83,0.83);
+    -moz-transform: scale3d(0.83,0.83,0.83);
+    -ms-transform: scale3d(0.83,0.83,0.83);
+    -o-transform: scale3d(0.83,0.83,0.83);
+}
+    75%{
+
+        bottom: 173px;
+        left: -105px;
+        transform: scale3d(0.79,0.79,0.79);
+        -webkit-transform: scale3d(0.79,0.79,0.79);
+        -moz-transform: scale3d(0.79,0.79,0.79);
+        -ms-transform: scale3d(0.79,0.79,0.79);
+        -o-transform: scale3d(0.79,0.79,0.79);
+}
+85%{
+
+    bottom: 169px;
+    left: -102px;
+    transform: scale3d(0.75,0.75,0.75);
+    -webkit-transform: scale3d(0.75,0.75,0.75);
+    -moz-transform: scale3d(0.75,0.75,0.75);
+    -ms-transform: scale3d(0.75,0.75,0.75);
+    -o-transform: scale3d(0.75,0.75,0.75);
+}
+    100%{
+
+        bottom: 167px;
+        left: -97px;
+        transform: scale3d(0.71,0.71,0.71);
+        -webkit-transform: scale3d(0.71,0.71,0.71);
+        -moz-transform: scale3d(0.71,0.71,0.71);
+        -ms-transform: scale3d(0.71,0.71,0.71);
+        -o-transform: scale3d(0.71,0.71,0.71);
+}
 }
 .popUP__bigestBlueBuble {
     position: absolute;
     left: 73px;
     bottom: -87px;
     z-index: 51;
+    animation-name:popUPbigestBlueBuble;
+    animation-duration: 10s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes popUPbigestBlueBuble{
+    0%{ transform: scale3d(0.95,0.95,0.95); 
+        -webkit-transform: scale3d(0.95,0.95,0.95); 
+        -moz-transform: scale3d(0.95,0.95,0.95); 
+        -ms-transform: scale3d(0.95,0.95,0.95); 
+        -o-transform: scale3d(0.95,0.95,0.95);
+        bottom: -87px;
+}
+15%{
+    transform: scale3d(0.9,0.9,0.9);
+    -webkit-transform: scale3d(0.9,0.9,0.9);
+    -moz-transform: scale3d(0.9,0.9,0.9);
+    -ms-transform: scale3d(0.9,0.9,0.9);
+    -o-transform: scale3d(0.9,0.9,0.9);
+    bottom: -89px;
+}
+    25%{
+        transform: scale3d(0.85,0.85,0.85);
+        -webkit-transform: scale3d(0.85,0.85,0.85);
+        -moz-transform: scale3d(0.85,0.85,0.85);
+        -ms-transform: scale3d(0.85,0.85,0.85);
+        -o-transform: scale3d(0.85,0.85,0.85);
+        bottom: -91px;
+}
+35%{
+    transform: scale3d(0.83,0.83,0.83);
+    -webkit-transform: scale3d(0.83,0.83,0.83);
+    -moz-transform: scale3d(0.83,0.83,0.83);
+    -ms-transform: scale3d(0.83,0.83,0.83);
+    -o-transform: scale3d(0.83,0.83,0.83);
+    bottom: -93px;
+}
+        50%{
+            transform: scale3d(0.80,0.80,0.80);
+            -webkit-transform: scale3d(0.80,0.80,0.80);
+            -moz-transform: scale3d(0.80,0.80,0.80);
+            -ms-transform: scale3d(0.80,0.80,0.80);
+            -o-transform: scale3d(0.80,0.80,0.80);
+            bottom: -95px;
+}
+60%{
+    transform: scale3d(0.75,0.75,0.75);
+    -webkit-transform: scale3d(0.75,0.75,0.75);
+    -moz-transform: scale3d(0.75,0.75,0.75);
+    -ms-transform: scale3d(0.75,0.75,0.75);
+    -o-transform: scale3d(0.75,0.75,0.75);
+    bottom: -97px;
+}
+    75%{
+        transform: scale3d(0.70,0.70,0.70);
+        -webkit-transform: scale3d(0.70,0.70,0.70);
+        -moz-transform: scale3d(0.70,0.70,0.70);
+        -ms-transform: scale3d(0.70,0.70,0.70);
+        -o-transform: scale3d(0.70,0.70,0.70);
+        bottom: -99px;
+}
+85%{
+    transform: scale3d(0.65,0.65,0.65);
+    -webkit-transform: scale3d(0.65,0.65,0.65);
+    -moz-transform: scale3d(0.65,0.65,0.65);
+    -ms-transform: scale3d(0.65,0.65,0.65);
+    -o-transform: scale3d(0.65,0.65,0.65);
+    bottom: -101px;
+}
+    100%{
+        transform: scale3d(0.6,0.6,0.6);
+        -webkit-transform: scale3d(0.6,0.6,0.6);
+        -moz-transform: scale3d(0.6,0.6,0.6);
+        -ms-transform: scale3d(0.6,0.6,0.6);
+        -o-transform: scale3d(0.6,0.6,0.6);
+        bottom: -103px;
+}
 }
 .popUP__middleBlueBuble {
     position: absolute;
     left: 47px;
     top: 29px;
     z-index: 51;
+    animation-name: popUPmiddleBlueBuble;
+    animation-duration: 12s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes popUPmiddleBlueBuble{
+    0%{
+        left: 47px;
+        top: 29px;
+}
+15%{
+    left: 52px;
+    top: 34px;
+
+}
+    25%{
+        left: 57px;
+        top: 39px; 
+
+}
+35%{
+    left: 62px;
+    top: 44px; 
+}
+        50%{
+            left: 67px;
+            top: 49px; 
+}
+60%{
+    left: 72px;
+    top: 54px; 
+}
+    75%{
+        left: 77px;
+        top: 59px; 
+}
+85%{
+    left: 82px;
+    top: 64px; 
+}
+    100%{
+        left: 87px;
+        top: 69px; 
+
+}
 }
 .popUP__saturatedPinkBuble {
     position: absolute;
     top: 61px;
     left: -57px;
     z-index: -1;
+    animation-name: popUPsaturatedPinkBuble;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes popUPsaturatedPinkBuble{
+    0%{
+        top: -149px;
+        left: -149px;
+        top: 41px;
+        left: -76px;
+    }
+    50%{
+    top: -115px;
+    left: -110px;
+    top: 75px;
+    left: -37px;
+    }
+    100%{
+        top: -99px;
+        left: -99px;
+        top: 91px;
+        left: -26px;
+    }
 }
 .popUP__bigestPinkBuble {
     position: absolute;
     left: 43px;
     top: 167px;
+    animation-name: popUpbigestPinkBuble;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes popUpbigestPinkBuble{
+    0%{
+        left: 43px;
+        top: 167px;
+    }
+    50%{
+        left: 73px;
+        top: 137px;
+        transform: scale3d(0.85,0.85,0.85);
+        -webkit-transform: scale3d(0.85,0.85,0.85);
+        -moz-transform: scale3d(0.85,0.85,0.85);
+        -ms-transform: scale3d(0.85,0.85,0.85);
+        -o-transform: scale3d(0.85,0.85,0.85);
+    }
+    100%{
+        left: 83px;
+        top: 167px;
+        transform: scale3d(0.7,0.7,0.70);
+        -webkit-transform: scale3d(0.7,0.7,0.70);
+        -moz-transform: scale3d(0.7,0.7,0.70);
+        -ms-transform: scale3d(0.7,0.7,0.70);
+        -o-transform: scale3d(0.7,0.7,0.70);
+    }
 }
 .popUP__topBlueBuble {
     position: absolute;
     top: -88px;
     left: 61px;
+    animation-name: popUPtopBlueBuble;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes popUPtopBlueBuble{
+
+    0%{
+        top: -88px;
+        left: 61px;
+}
+15%{
+    top: -83px;
+    left: 66px;
+
+}
+    25%{
+        top: -78px;
+        left: 71px;
+
+}
+35%{
+    top: -73px;
+    left: 76px;
+}
+        50%{
+            top: -73px;
+            left: 68px;
+}
+60%{
+    top: -73px;
+    left: 61px;
+}
+    75%{
+        top: -76px;
+        left: 56px;
+}
+85%{
+    top: -81px;
+    left: 61px;
+}
+    100%{
+        top: -88px;
+        left: 61px;
+
+}
 }
 .popUP__bottomBlueBuble {
     position: absolute;
     bottom: 80px;
     left: 113px;
+    animation-name: popUPbottomBlueBuble;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes popUPbottomBlueBuble{
+    0%{      bottom: 80px;
+        left: 118px;
+
+}
+15%{
+    bottom: 80px;
+    left: 123px;
+
+}
+    25%{
+        bottom: 80px;
+        left: 128px;
+
+}
+35%{
+    bottom: 80px;
+    left: 133px;
+}
+        50%{
+            bottom: 75px;
+            left: 130px;
+            transform: scale3d(0.93,0.93,0.93);
+            -webkit-transform: scale3d(0.93,0.93,0.93);
+            -moz-transform: scale3d(0.93,0.93,0.93);
+            -ms-transform: scale3d(0.93,0.93,0.93);
+            -o-transform: scale3d(0.93,0.93,0.93);
+}
+60%{
+    bottom: 70px;
+    left: 126px;
+    transform: scale3d(0.86,0.86,0.86);
+    -webkit-transform: scale3d(0.86,0.86,0.86);
+    -moz-transform: scale3d(0.86,0.86,0.86);
+    -ms-transform: scale3d(0.86,0.86,0.86);
+    -o-transform: scale3d(0.86,0.86,0.86);
+}
+    75%{
+        bottom: 65px;
+        left: 123px;
+        transform: scale3d(0.81,0.81,0.81);
+        -webkit-transform: scale3d(0.81,0.81,0.81);
+        -moz-transform: scale3d(0.81,0.81,0.81);
+        -ms-transform: scale3d(0.81,0.81,0.81);
+        -o-transform: scale3d(0.81,0.81,0.81);
+}
+85%{
+    bottom: 68px;
+    left: 120px;
+    transform: scale3d(0.93,0.93,0.93);
+    -webkit-transform: scale3d(0.93,0.93,0.93);
+    -moz-transform: scale3d(0.93,0.93,0.93);
+    -ms-transform: scale3d(0.93,0.93,0.93);
+    -o-transform: scale3d(0.93,0.93,0.93);
+}
+    100%{
+        bottom: 73px;
+        left: 121px;
+        transform: scale3d(1.03,1.03,1.03);
+        -webkit-transform: scale3d(1.03,1.03,1.03);
+        -moz-transform: scale3d(1.03,1.03,1.03);
+        -ms-transform: scale3d(1.03,1.03,1.03);
+        -o-transform: scale3d(1.03,1.03,1.03);
+}
 }
 .popUP__movableBlock {
     position: relative;
@@ -728,7 +2155,7 @@ body{
     border-radius: 50px;
     border: 0px solid black;
     background-color:#ff6a9f;
-    margin-right: 9px;
+    margin-right: 18px;
 }
 .popUpMove__right {
     transform: rotate(-90deg);
