@@ -37,11 +37,15 @@ body {
 
 .wrapper__global {
   position: absolute;
-  left: 124px;
+  left: 57px;
   top: 0;
   display: flex;
   margin-top: 25.5px;
   z-index: 100;
+}
+
+.wrapper__svg {
+  cursor: pointer;
 }
 
 .wrapper__project {
@@ -120,6 +124,10 @@ body {
   letter-spacing: 7.5px;
 }
 
+.firstItem__button {
+  cursor: pointer;
+}
+
 .frstBtn {
   margin-left: 51px;
 }
@@ -131,6 +139,16 @@ body {
   border-radius: 80px;
   background-color: #ff6a9f;
   display: flex;
+}
+
+.firstBtn-cyst {
+  width: 55px;
+  background: linear-gradient(-45deg, #f0b9b9, #b9476f);
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
 }
 
 .frstBtn__round {
@@ -448,7 +466,7 @@ body {
 }
 .firstItem__pinkSperm {
   position: absolute;
-  right: 0;
+  right: 119px;
   top: 0;
 }
 
@@ -957,7 +975,8 @@ body {
 }
 
 .thirdDown__leftSide {
-  background-color: rgb(235, 235, 235);
+  filter: drop-shadow(1.1px 1.1px 3.1px black);
+  background-color: white;
   border-radius: 34px;
   -webkit-border-radius: 34px;
   -moz-border-radius: 34px;
@@ -966,7 +985,7 @@ body {
 }
 
 .thirdDown__leftSide-body {
-  background-color: rgb(235, 235, 235);
+  background-color: white;
   position: relative;
   padding-left: 100px;
   border-radius: 34px;
@@ -994,7 +1013,8 @@ body {
 }
 
 .thirdDown__upStructure {
-  background-color: rgb(235, 235, 235);
+  background-color: white;
+  filter: drop-shadow(1.1px 1.1px 3.1px black);
   position: relative;
   border-radius: 34px;
 }
@@ -1024,6 +1044,17 @@ body {
   align-items: center;
   justify-content: space-around;
   margin-top: 30px;
+  cursor: pointer;
+}
+
+.thirdDown__round-cyst {
+  width: 55px;
+  background: linear-gradient(-45deg, #f0b9b9, #b9476f);
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
 }
 
 .thirdDown__round {
@@ -1508,7 +1539,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  box-shadow: 10px 5px 5px black;
+  filter: drop-shadow(2px 0px 3px #333333);
 }
 
 .popUP__cross-cyst {
