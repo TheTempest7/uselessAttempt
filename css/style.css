@@ -573,6 +573,10 @@ body {
   letter-spacing: 4px;
 }
 
+.secondItem__scroll-father {
+  position: relative;
+}
+
 .secondItem__scrollBlock {
   overflow: auto;
   width: 824px;
@@ -590,8 +594,8 @@ body {
   height: 467px;
   position: absolute;
   z-index: 3;
-  top: 63px;
-  left: 999px;
+  top: -5px;
+  left: 54px;
   width: 756px;
   border-radius: 34px;
   -webkit-border-radius: 34px;
@@ -614,6 +618,16 @@ body {
   overflow-y: hidden;
   position: relative;
   z-index: 4;
+}
+
+.secondItem__crutch {
+  position: absolute;
+  z-index: 5;
+  width: 700px;
+  left: 88px;
+  top: 422px;
+  background-color: white;
+  height: 25px;
 }
 
 .mouvablePart.spermAnim .secondItem__bigestOne {
